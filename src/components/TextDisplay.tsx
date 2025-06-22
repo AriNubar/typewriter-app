@@ -18,7 +18,8 @@ export default function TextDisplay({ text, currentIndex, errorPositions, fontFa
     const [lines, setLines] = useState<string[]>([])
     const [currentLineIndex, setCurrentLineIndex] = useState(0)
     const [charToLineMap, setCharToLineMap] = useState<number[]>([])
-    const [previousLineIndex, setPreviousLineIndex] = useState(0)
+    // const [previousLineIndex, setPreviousLineIndex] = useState(0)
+    const [, setPreviousLineIndex] = useState(0)
 
     // Calculate progress percentage
     const progress = text.length > 0 ? (currentIndex / text.length) * 100 : 0
